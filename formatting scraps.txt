@@ -1,0 +1,13 @@
+##Regex formatting text cases
+
+eye_color = re.search("Eye colour:(.+?) ", cleantext)
+ethic_orgin = re.search("Ethic Origin:(.+?) ", cleantext)
+spoken_lang = re.search("Ethic Origin:(.+?) ", cleantext)
+dob = date_pattern.search(cleantext).group()   #https://stackoverflow.com/questions/54058389/regex-match-month-name-day-year
+nat = re.search("Nationality:(.+?) ", cleantext)
+case_state = re.findall(case_state_patt, cleantext) #search for string after 
+sex_ = re.search("Sex: (.+?) ", cleantext)
+crime = re.search(crime_patt, cleantext)
+height = re.search("Approximate height:(.+?) ", cleantext)
+name_ =  re.search("([A-Z\s])(.*) (?=Wanted)|(?=Crime)", cleantext)
+
